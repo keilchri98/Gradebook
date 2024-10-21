@@ -1,0 +1,21 @@
+last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+
+# Your code below: 
+subjects = [['physics', 98], ['calculus', 97], ['poetry', 85],['history', 88]]
+
+grades = [98, 97, 85, 88]
+
+gradebook = [['physics', 98], ['calculus', 97], ['poetry', 85],['history', 88]]
+gradebook.append(["computer science", 100])
+gradebook.append(['visual arts', 98])
+gradebook.remove(['poetry', 85])
+
+print(gradebook)
+
+for subject in gradebook:
+    if subject[0] == 'poetry':
+     subject.append('Pass')
+print(gradebook)
+
+full_grade_book = last_semester_gradebook + gradebook
+print(full_grade_book)
